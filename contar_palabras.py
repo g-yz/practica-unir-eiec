@@ -1,4 +1,4 @@
-texto = "hola mundo"
+texto = input("Escribe una oración: ")
 
 conteo = {}
 
@@ -8,5 +8,6 @@ for caracter in texto:
     else:
         conteo[caracter] = 1
 
+print("\nFrecuencia de caracteres:")
 for caracter, cantidad in conteo.items():
     print(f"'{caracter}': {cantidad}")
